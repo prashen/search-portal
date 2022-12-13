@@ -17,11 +17,10 @@
         "category": "slacks",
         "id": "12346",
         "channel": "yahoo",
-        "author": "bob",
+        "author": "lunch",
         "message": "I am up for lunch!",
         "timestamp": "2019-02-26 11:00:01",
         "matching_terms": [
-          "bob",
           "yahoo",
           "lunch"
         ]
@@ -56,11 +55,10 @@
         "category": "slacks",
         "id": "22346",
         "channel": "yahoo-support",
-        "author": "dave",
+        "author": "bob",
         "message": "Yeah, I met with Bob there",
         "timestamp": "2019-02-26 12:00:01",
         "matching_terms": [
-          "dave",
           "yahoo-support",
           "bob"
         ]
@@ -74,7 +72,6 @@
         "timestamp": "2019-02-26 12:00:02",
         "matching_terms": [
           "dave",
-          "john",
           "yahoo"
         ]
       }

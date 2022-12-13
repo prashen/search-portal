@@ -19,7 +19,10 @@ const Search = memo(() => {
    */
   const arrayHandle = (arr, searchQueryParam) => {
     return arr?.filter((arrItem) => {
-      return arrItem?.matching_terms.includes(searchQueryParam)
+      if(arrItem?.matching_terms.some((i)=> i.startsWith(searchQueryParam.toLowerCase()))) {
+        return true
+      }
+      return false
     })
   }
 

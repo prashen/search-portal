@@ -7,7 +7,7 @@ import './SearchResultStyle.css';
  */
 const SearchItem = memo(({ item, onItemClick }) => {
   return item?.map((childItem, childInd) => {
-    const { image, author, name, user, description, message, path, category } = childItem || {};
+    const { title, image, author, name, user, description, message, path, category } = childItem || {};
 
     return (<div key={childInd} onClick={() => onItemClick(childItem)} className={`item ${category}`}>
       <div className='content-wrap'>
@@ -16,9 +16,9 @@ const SearchItem = memo(({ item, onItemClick }) => {
 
         {/* title and description */}
         <div>
-          <h2 className='title'>{author || name || user}</h2>
+          <h2 className='title'>{author || name || user || title}</h2>
 
-          <h2 className='title'>{description || path}</h2>
+          <h2 className='title'>{description}</h2>
         </div>
       </div>
 

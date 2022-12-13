@@ -4,7 +4,7 @@
         "category": "gdrive",
         "id": "12345",
         "path": "/taxes/2016/w2-yahoo.pdf",
-        "title": "\"2016 W2\"",
+        "title": "2016 W2",
         "shared_with": [
           "jane@accountants.com",
           "spouse@family.org"
@@ -20,7 +20,7 @@
         "category": "gdrive",
         "id": "34567",
         "path": "/work/customers/yahoo/invoice.docx",
-        "title": "\"Yahoo: Invoice\"",
+        "title": "Yahoo: Invoice",
         "shared_with": [
           "yahoo-accounts@yahoo.com"
         ],
@@ -34,7 +34,7 @@
         "category": "gdrive",
         "id": "56789",
         "path": "/purchases/2016/fridge.pdf",
-        "title": "\"Best Buy: Invoice\"",
+        "title": "Best Buy: Invoice",
         "matching_terms": [
           "invoice"
         ],
@@ -44,7 +44,7 @@
         "category": "gdrive",
         "id": "3456789",
         "path": "/work/customers/yahoo/proposal.docx",
-        "title": "\"Yahoo: Draft MoU\"",
+        "title": "Yahoo: Draft MoU",
         "shared_with": [
           "yahoo-accounts@yahoo.com"
         ],
@@ -59,7 +59,7 @@
         "category": "gdrive",
         "id": "3556789",
         "path": "/work/customers/yahoo/meeting-notes.docx",
-        "title": "\"Yahoo: Meeting Notes\"",
+        "title": "Yahoo: Meeting Notes",
         "shared_with": [
           "yahoo-accounts@yahoo.com"
         ],
