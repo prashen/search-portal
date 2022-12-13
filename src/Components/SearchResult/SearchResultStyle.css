@@ -1,0 +1,19 @@
+
+.label {
+  font-size: 10px;
+}
+
+.item {
+  border: 1px solid blueviolet;
+  border-radius: 5px;
+  padding:10px;
+  margin:5px;
+  display: block;
+  cursor: pointer;
+}
+.item:hover, .item:focus {
+  background-color: blueviolet;
+}
+.item:hover .title, .item:hover .label {
+  color:white;
+}

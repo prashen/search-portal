@@ -1,0 +1,39 @@
+{
+   "images": [
+     {
+       "id": "12345",
+       "image": "<add your campus image>",
+       "created": "12-3-2018",
+       "description": "Yahoo campus",
+       "matching_terms": ["yahoo", "sheldon", "cooper"]
+     },
+     {
+       "id": "12346",
+       "image": "<add your campus image>",
+       "created": "12-15-2018",
+       "description": "Yahoo campus",
+       "matching_terms": ["yahoo"]
+     },
+     {
+       "id": "12347",
+       "image": "<add your campus image>",
+       "created": "12-21-2018",
+       "description": "Yahoo campus",
+       "matching_terms": ["yahoo", "sheldon", "cooper"]
+     },
+     {
+       "id": "12348",
+       "image": "<add your campus image>",
+       "created": "1-14-2019",
+       "description": "Yahoo campus",
+       "matching_terms": ["yahoo", "erica"]
+     },
+     {
+       "id": "12349",
+       "image": "<add your campus image>",
+       "created": "2-1-2019",
+       "description": "Yahoo campus",
+       "matching_terms": ["yahoo"]
+     }
+   ]
+}

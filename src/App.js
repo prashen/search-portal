@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import {useEffect, useMemo, useCallback} from 'react';
+import axios from 'axios';
+import debounce from 'lodash.debounce';
+import {allDataMerger} from './API/api';
+import Search from './Pages/Search';
+// import imageData from './schema/data/images.json';
+// import contactData from './schema/data/contacts.json';
+// import gdriveData from './schema/data/gdrive.json';
+// import slackData from './schema/data/slacks.json';
+// import twitterData from './schema/data/tweets.json';
+
+
+
+// import './App.css';
 
 function App() {
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="">
+      {/* <h1>Search Yahoo</h1> */}
+      {/* <input className="searchInput" type="search" onChange={onChangeSearchHandler} /> */}
+
+      <Search />
     </div>
   );
 }
+
+// function allDataMerger(){
+//   console.log('fired', [imageData, contactData, gdriveData, slackData, twitterData])
+//   return [imageData, contactData, gdriveData, slackData, twitterData]
+// }
 
 export default App;
