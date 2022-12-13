@@ -4,16 +4,75 @@
 }
 
 .item {
-  border: 1px solid blueviolet;
+  border: 2px solid blueviolet;
   border-radius: 5px;
   padding:10px;
-  margin:5px;
+  margin-top:10px;
+  margin-bottom:10px;
   display: block;
   cursor: pointer;
 }
 .item:hover, .item:focus {
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
 }
-.item:hover .title, .item:hover .label {
+
+.item .title, .item .label {
   color:white;
+}
+
+/* .item:hover .title, .item:hover .label {
+  color:white;
+} */
+
+.contacts {
+  border-color:#196ddc;
+}
+
+.slacks {
+  border-color:#471547;
+}
+
+.gdrive {
+  border-color:#f3b003;
+}
+
+.images {
+  border-color:#32a04e;
+}
+
+.tweets {
+  border-color:lightskyblue;
+}
+
+.item.images  {
+  background-color: #32a04e;
+}
+.item.gdrive  {
+  background-color: #f3b003;
+}
+.item.tweets {
+  background-color: lightskyblue;
+}
+.item.contacts {
+  background-color: #196ddc;
+}
+.item.slacks {
+  background-color: #471547;
+}
+
+/* hover */
+.item.images:hover  {
+  background-color: #32a04e;
+}
+.item.gdrive:hover  {
+  background-color: #f3b003;
+}
+.item.tweets:hover {
+  background-color: lightskyblue;
+}
+.item.contacts:hover {
+  background-color: #196ddc;
+}
+.item.slacks:hover {
+  background-color: #471547;
 }

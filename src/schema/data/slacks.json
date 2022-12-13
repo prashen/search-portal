@@ -1,6 +1,7 @@
 {
     "slacks": [
       {
+        "category": "slacks",
         "id": "12345",
         "channel": "yahoo",
         "author": "alice",
@@ -13,6 +14,7 @@
         ]
       },
       {
+        "category": "slacks",
         "id": "12346",
         "channel": "yahoo",
         "author": "bob",
@@ -25,6 +27,7 @@
         ]
       },
       {
+        "category": "slacks",
         "id": "12347",
         "channel": "yahoo",
         "author": "erica",
@@ -37,6 +40,7 @@
         ]
       },
       {
+        "category": "slacks",
         "id": "22345",
         "channel": "yahoo-support",
         "author": "alice",
@@ -49,6 +53,7 @@
         ]
       },
       {
+        "category": "slacks",
         "id": "22346",
         "channel": "yahoo-support",
         "author": "dave",
@@ -61,6 +66,7 @@
         ]
       },
       {
+        "category": "slacks",
         "id": "22347",
         "channel": "yahoo-support",
         "author": "dave",

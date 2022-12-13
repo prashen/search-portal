@@ -1,6 +1,7 @@
 {
     "contacts": [
       {
+        "category": "contacts",
         "id": "12345",
         "name": "John Doe",
         "company": "Yahoo",
@@ -16,6 +17,7 @@
         "last_contact": "2019-02-26"
       },
       {
+        "category": "contacts",
         "id": "31456",
         "name": "Robert Roe",
         "company": "Yahoo",
@@ -29,6 +31,7 @@
         "last_contact": "2019-02-28"
       },
       {
+        "category": "contacts",
         "id": "787661",
         "name": "Alice Smith",
         "company": "Other Corp",
@@ -42,6 +45,7 @@
         "last_contact": "2019-02-29"
       },
       {
+        "category": "contacts",
         "id": "122231",
         "name": "Bobert Jones",
         "company": "Yahoo",
@@ -55,6 +59,7 @@
         "last_contact": "2019-01-19"
       },
       {
+        "category": "contacts",
         "id": "122231",
         "name": "Sheldon Cooper",
         "company": "Yahoo",

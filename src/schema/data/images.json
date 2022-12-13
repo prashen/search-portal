@@ -1,6 +1,7 @@
 {
    "images": [
      {
+      "category": "images",
        "id": "12345",
        "image": "<add your campus image>",
        "created": "12-3-2018",
@@ -8,6 +9,7 @@
        "matching_terms": ["yahoo", "sheldon", "cooper"]
      },
      {
+      "category": "images",
        "id": "12346",
        "image": "<add your campus image>",
        "created": "12-15-2018",
@@ -15,6 +17,7 @@
        "matching_terms": ["yahoo"]
      },
      {
+      "category": "images",
        "id": "12347",
        "image": "<add your campus image>",
        "created": "12-21-2018",
@@ -22,6 +25,7 @@
        "matching_terms": ["yahoo", "sheldon", "cooper"]
      },
      {
+      "category": "images",
        "id": "12348",
        "image": "<add your campus image>",
        "created": "1-14-2019",
@@ -29,6 +33,7 @@
        "matching_terms": ["yahoo", "erica"]
      },
      {
+      "category": "images",
        "id": "12349",
        "image": "<add your campus image>",
        "created": "2-1-2019",

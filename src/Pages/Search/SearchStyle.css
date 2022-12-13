@@ -1,6 +1,12 @@
 body {
   padding:20px;
 }
+p{
+  margin:5px;
+}
+h2 {
+  margin:5px;
+}
 .container {
   margin:auto;
   width:50%;
