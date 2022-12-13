@@ -1,26 +1,26 @@
-import React, { memo, useState, useMemo, useCallback, useEffect } from 'react';
-import './SearchResultStyle.css';
+import React, { useCallback } from 'react';
 import { SearchItem } from './SearchItem';
+import './SearchResultStyle.css';
 
 /**
  * Search result page
  * @returns jsx
  */
 const SearchResult = ({ arrayData }) => {
-  console.log('arrayData', arrayData);
-
+  /**
+   * on click item
+   */
   const itemHandler = useCallback((idParam) => {
-    alert(idParam)
+    alert(JSON.stringify(idParam))
   }, [])
 
   return (<div>
     {arrayData.length === 0 && (<h2>No data...</h2>)}
 
     {arrayData && arrayData.map((item, ind) => {
-      console.log('item', item);
       return (
-        <div>
-            <SearchItem key={ind} onItemClick={itemHandler} item={item} itemKey={ind} category={'image'} />
+        <div key={ind}>
+            <SearchItem key={ind} onItemClick={itemHandler} item={item} itemKey={ind} />
         </div>
       )
     })}

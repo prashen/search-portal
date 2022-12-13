@@ -1,26 +1,33 @@
-import React, { memo, useState, useMemo, useCallback, useEffect } from 'react';
+import React, { memo } from 'react';
 import './SearchResultStyle.css';
 
 /**
  * Search result page
  * @returns jsx
  */
-const SearchItem = memo(({ item, itemKey, onItemClick }) => {
+const SearchItem = memo(({ item, onItemClick }) => {
+  return item?.map((childItem, childInd) => {
+    const { image, author, name, user, description, message, path, category } = childItem || {};
 
-  return item.map((childItem, childInd) => {
-    console.log('childItem', childItem);
-    const {image, author, name, user, description, message, path, category }  = childItem || {};
+    return (<div key={childInd} onClick={() => onItemClick(childItem)} className={`item ${category}`}>
+      <div className='content-wrap'>
+        {/* image */}
+        {image && <img src={image} alt={description} className="image" />}
 
-    return (<a key={childInd} onClick={() => onItemClick(category)} className={`item ${category}`}>
-        <h2 className='title'>{author || name || user}</h2>
+        {/* title and description */}
+        <div>
+          <h2 className='title'>{author || name || user}</h2>
 
-        <p className='title'>{description || path}</p> 
-    
-        <p className='label'>{category}</p>
-      </a>)
+          <h2 className='title'>{description || path}</h2>
+        </div>
+      </div>
+
+      {/* category */}
+      <div className='label-wrap'>
+        <p className='label'>#{category}</p>
+      </div>
+    </div>)
   })
-
-
 })
 
 export { SearchItem };

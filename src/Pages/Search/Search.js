@@ -12,36 +12,33 @@ const Search = memo(() => {
   const [dataArray, setDataArray] = useState([]);
 
   /**
-   * 
+   * matches with query and returns array
    * @param {*} arr 
    * @param {*} searchQueryParam 
-   * @returns 
+   * @returns array
    */
   const arrayHandle = (arr, searchQueryParam) => {
-    return arr?.filter((arrItem, ind) => {
-      return arrItem?.matching_terms.includes(searchQueryParam.toLowerCase())
+    return arr?.filter((arrItem) => {
+      return arrItem?.matching_terms.includes(searchQueryParam)
     })
   }
 
-  /**
-   * 
-   * @param {*} query 
+  /** 
+   * API call
+   * @param { string } query 
    */
   const fetchData = async (searchQuery) => {
-    console.log('query', searchQuery);
+    if (searchQuery.trim() !== '') {
+      const allData = await allDataMerger();
 
-    const allData = await allDataMerger();
-    console.log(allData);
+      let obj = ['images', 'contacts', 'gdrive', 'slacks', 'tweets'];
 
-    let obj = ['images', 'contacts', 'gdrive', 'slacks', 'tweets'];
+      const result = allData.map((item, ind) => {
+        return arrayHandle(item[obj[ind]], searchQuery.trim())
+      })
 
-    const result = allData.map((item, ind) => {
-      console.log(item);
-      return arrayHandle(item[obj[ind]], searchQuery)
-    })
-
-    console.log('result', result);
-    setDataArray(result);
+      setDataArray(result);
+    }
   }
 
   /**
@@ -52,12 +49,22 @@ const Search = memo(() => {
     fetchData(value);
   }, 300), [])
 
+  /**
+   * jsx
+   */
   return (<div className="container">
-    <h1>Yahoo Internal Search Portal</h1>
+    <div className='inner-container'>
+      <h1>Yahoo Internal Search Portal</h1>
 
-    <input placeholder="Search ex - John" className="searchInput" type="search" onChange={onChangeSearchHandler} />
+      {/* input */}
+      <div className='search-wrap'>
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input placeholder="Search" className="searchInput" type="search" onChange={onChangeSearchHandler} />
+      </div>
 
-    <SearchResult arrayData={dataArray} />
+      {/* search result */}
+      <SearchResult arrayData={dataArray} />
+    </div>
   </div>)
 })
 

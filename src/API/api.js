@@ -6,7 +6,6 @@ import slackData from '../schema/data/slacks.json';
 import twitterData from '../schema/data/tweets.json';
 
 async function allDataMerger(){
-  console.log('fired', [imageData, contactData, gdriveData, slackData, twitterData])
   return [imageData, contactData, gdriveData, slackData, twitterData]
 }
 

@@ -1,2 +1,2 @@
 import { SearchResult } from './SearchResult';
-export {SearchResult};
+export { SearchResult };
