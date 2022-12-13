@@ -38,6 +38,8 @@ const Search = memo(() => {
       })
 
       setDataArray(result);
+    } else {
+      setDataArray([])
     }
   }
 
@@ -58,8 +60,8 @@ const Search = memo(() => {
 
       {/* input */}
       <div className='search-wrap'>
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <input placeholder="Search" className="searchInput" type="search" onChange={onChangeSearchHandler} />
+        <i className="fa-solid fa-magnifying-glass"></i>
+        <input placeholder="Search exp- yahoo, erica, john" className="searchInput" type="search" onChange={onChangeSearchHandler} />
       </div>
 
       {/* search result */}
